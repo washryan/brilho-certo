@@ -13,12 +13,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://brilho-certo.vercel.app"),
   title: "Brilho Certo | Agendamento de Faxina Residencial",
   description:
-    "Agende sua faxina residencial com praticidade, cuidado e confirmacao pelo WhatsApp.",
+    "Agende sua faxina residencial com praticidade, cuidado e confirmação pelo WhatsApp.",
   icons: {
-    icon: "/brand/brilho-certo-icone-crop.png",
-    apple: "/brand/brilho-certo-icone-crop.png",
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
+  openGraph: {
+    title: "Brilho Certo | Agendamento de Faxina Residencial",
+    description:
+      "Limpeza com cuidado, confiança e confirmação rápida pelo WhatsApp.",
+    url: "https://brilho-certo.vercel.app",
+    siteName: "Brilho Certo",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Brilho Certo - Agendamento de faxina residencial",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Brilho Certo | Agendamento de Faxina Residencial",
+    description:
+      "Limpeza com cuidado, confiança e confirmação rápida pelo WhatsApp.",
+    images: ["/twitter-image.png"],
   },
 };
 
